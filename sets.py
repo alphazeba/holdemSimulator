@@ -8,7 +8,7 @@ Created on Tue Jul 27 23:25:06 2021
 def appendToAll(value, array):
     for item in array:
         item.append(value)
-    return array;
+    return array
 
 def getAllKLengthSubsets(array,k, startIndex=0):
     if k == 0: return [[]]

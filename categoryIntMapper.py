@@ -10,16 +10,16 @@ Created on Sun Jul 25 14:18:19 2021
 
 class CategoryIntMapper:
     def __init__(self,categories):
-        self.setCategories(categories);
+        self.setCategories(categories)
             
     def setCategories(self,categories):
-        self.levels = categories;
-        self.totalValues = 1;
+        self.levels = categories
+        self.totalValues = 1
         for level in categories:
             self.totalValues *= len(level)
             
     def getTotalValues(self):
-        return self.totalValues;
+        return self.totalValuesF
     
     def valueToInt(self,value):
         n = 0
@@ -30,7 +30,7 @@ class CategoryIntMapper:
                     n += ci
                     break
                 elif ci == len(level)-1:
-                    invalidCategoryName = 1;
+                    invalidCategoryName = 1
                     print("could not find")
                     print(value[li])
                     print("in")

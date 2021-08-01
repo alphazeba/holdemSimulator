@@ -5,7 +5,7 @@ Created on Sun Jul 25 15:35:07 2021
 @author: arnho
 """
 
-from categoryIntMapper import CategoryIntMapper;
+from categoryIntMapper import CategoryIntMapper
 from card import getCardFaceValues, Card
 
 # hand hasher

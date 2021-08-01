@@ -12,11 +12,11 @@ from categoryIntMapper import CategoryIntMapper
 def arrayCompare(a,b):
     length = len(a)
     if length != len(b):
-        return False;
+        return False
     for i in range(length):
         if a[i] != b[i]:
-            return False;
-    return True;
+            return False
+    return True
 
 
 categories = [
@@ -25,7 +25,7 @@ categories = [
     ]
 mapper = CategoryIntMapper(categories)
 
-assert mapper.getTotalValues() == 52;
+assert mapper.getTotalValues() == 52
 
 
 smallestValue = [categories[0][0],categories[1][0]]
@@ -62,7 +62,7 @@ bhand = [Card(x) for x in cardNums]
 aHash = hh.hashHand(ahand)
 bHash = hh.hashHand(bhand)
 assert aHash == bHash
-print("ahand   :  bhand");
+print("ahand   :  bhand")
 for i in range(len(ahand)):
     print (ahand[i].toString() + " : " + bhand[i].toString())
 print(str(aHash) + " : " + str(bHash))

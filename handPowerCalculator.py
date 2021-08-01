@@ -5,7 +5,7 @@ Created on Sun Jul 25 15:30:10 2021
 @author: arnho
 """
 
-from handHasher import HandHasher;
+from handHasher import HandHasher
 from categoryIntMapper import CategoryIntMapper
 from card import getCardFaceValues
 
@@ -37,7 +37,7 @@ class HandPowerCalculator:
             return self.powerMemo[handHash]
         handPower = self._calculateHand(handHash)
         self.powerMemo[handHash] = handPower
-        return handPower;
+        return handPower
     
     def powerToResult(self,power):
         handRank, c1,c2,c3,c4,c5 = self.powerMapper.intToValue(power)
@@ -149,7 +149,7 @@ class HandPowerCalculator:
             numMatches, value = matches[0]
             if(numMatches == 2):
                 return value
-        return None;
+        return None
     
     def _isTwoPair(self,matches):
         if len(matches) == 2:

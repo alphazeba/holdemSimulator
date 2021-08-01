@@ -49,7 +49,7 @@ class Card:
     cardNum = 0
     
     def __init__(self, cardNum=None, face=None, suit=None, mapper= buildCardMapper()):
-        self.mapper = mapper;
+        self.mapper = mapper
         if cardNum != None:
             self.setCardNum(cardNum)
         else:
@@ -69,10 +69,10 @@ class Card:
         return face in _cardFaceValues
         
     def getSuit(self):
-        return self.suit;
+        return self.suit
     
     def getFaceValue(self):
-        return self.face;
+        return self.face
     
     def setCardNum(self,cardNum):
         self.cardNum = cardNum
