@@ -19,7 +19,7 @@ class CategoryIntMapper:
             self.totalValues *= len(level)
             
     def getTotalValues(self):
-        return self.totalValuesF
+        return self.totalValues
     
     def valueToInt(self,value):
         n = 0
